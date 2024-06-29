@@ -11,6 +11,7 @@ app.use(cors())
 app.use(express.json())
 
 app.get("/", (req, res) => res.send(" Express on Vercel"));
+app.get("/home",(req,res)=>res.send("Home Page"))
 //Available Routes
 app.use('/api/auth',require('./routes/auth'))
 app.use('/api/notes',require('./routes/notes'))
